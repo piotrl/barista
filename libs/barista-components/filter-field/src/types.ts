@@ -206,9 +206,7 @@ export function isAsyncDtMultiSelectDef<D>(
   );
 }
 
-export function isPartialDtMultiSelectDef(
-  def: any,
-): def is DtNodeDef & {
+export function isPartialDtMultiSelectDef(def: any): def is DtNodeDef & {
   multiSelect: DtMultiSelectDef;
   option: DtOptionDef;
 } {
@@ -267,9 +265,7 @@ export function isAsyncDtAutocompleteDef<D>(
   );
 }
 
-export function isPartialDtAutocompleteDef(
-  def: any,
-): def is DtNodeDef & {
+export function isPartialDtAutocompleteDef(def: any): def is DtNodeDef & {
   autocomplete: DtAutocompleteDef;
   option: DtOptionDef;
 } {
